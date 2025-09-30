@@ -1,0 +1,30 @@
+{
+  "projectSettings": {
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null
+  },
+  "domains": [
+    {
+      "name": "coplit-built-g8so.vercel.app",
+      "redirect": null
+    },
+    {
+      "name": "legal.natureswaysoil.com",
+      "redirect": null
+    },
+    {
+      "name": "natureswaysoil.com", 
+      "redirect": "https://legal.natureswaysoil.com"
+    }
+  ],
+  "env": [
+    {
+      "key": "TIKTOK_VERIFICATION",
+      "value": "Vppdkkg17zPwMXE5vCnTmcHXvGI2moBj",
+      "type": "plain"
+    }
+  ]
+}

@@ -8,6 +8,19 @@
           "value": "Vppdkkg17zPwMXE5vCnTmcHXvGI2moBj"
         }
       ]
+    },
+    {
+      "source": "/txt-record.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        },
+        {
+          "key": "Cache-Control", 
+          "value": "public, max-age=300"
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -18,6 +31,25 @@
     {
       "source": "/privacy_policy.html", 
       "destination": "/privacy_policy.html"
+    },
+    {
+      "source": "/dns-txt",
+      "destination": "/api/tiktok-dns"
+    },
+    {
+      "source": "/txt",
+      "destination": "/txt-record.txt"
     }
-  ]
+  ],
+  "functions": {
+    "api/dns-verification.js": {
+      "memory": 128
+    },
+    "api/tiktok-dns.js": {
+      "memory": 128
+    }
+  },
+  "env": {
+    "TIKTOK_VERIFICATION": "Vppdkkg17zPwMXE5vCnTmcHXvGI2moBj"
+  }
 }
