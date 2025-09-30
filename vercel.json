@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "tiktok-developers-site-verification",
+          "value": "Vppdkkg17zPwMXE5vCnTmcHXvGI2moBj"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/terms_of_service.html",
+      "destination": "/terms_of_service.html"
+    },
+    {
+      "source": "/privacy_policy.html", 
+      "destination": "/privacy_policy.html"
+    }
+  ]
+}
